@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #8e44ad, #3498db);
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.heading::after {
+    content: '';
+    width: 60%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.calculator {
+    background: linear-gradient(145deg, #1c1c1c, #333333);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+/* Light Theme (Default) */
+.calculator {
+    background: linear-gradient(145deg, #ffffff, #eeeeee); /* Light background */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.calculator #display {
+    color: #333333; /* Dark text for light theme */
+}
+
+/* Dark Theme */
+.calculator.dark {
+    background: linear-gradient(145deg, #1c1c1c, #333333); /* Dark background */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.calculator.dark #display {
+    color: #f8fafb; /* Light text for dark theme */
+}
+
+
+.theme-toggler {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.theme-toggler.active{
+    color:#333;
+}
+
+#display {
+    height: 80px;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    background: #444;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #666;
+}
+
+.btn-equal {
+    background: #2ecc71;
+    color: #fff;
+    height: 130px;
+    border-radius: 25px;
+}
+
+.btn-equal:hover {
+    background: #27ae60;
+}
+
+.btn-operator {
+    background: #e67e22;
+    color: #fff;
+}
+
+.btn-number {
+    background: #3498db;
+    color: #fff;
+}
+
+
