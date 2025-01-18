@@ -1,0 +1,1 @@
+This project involves creating a Stylish Calculator with a modern dark theme design, built entirely using HTML, CSS, and JavaScript The calculator will perform all the basic arithmetic operations such as addition, subtraction, multiplication, and division,while providing a smooth and interactive user experience with visually appealing buttons that change dynamically.
